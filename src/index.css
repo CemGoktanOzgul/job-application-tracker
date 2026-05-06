@@ -1,0 +1,63 @@
+/* LIGHT MODE (Varsayılan - Kırık Beyaz) */
+body {
+  background-color: #f8f9fa !important; /* Senin istediğin kırık beyaz / açık gri tonu */
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Kanban Kolonları İçin Özel Sınıf */
+.kanban-col {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e0e4e8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Başvuru Kartlarının Tasarımı */
+.card {
+  border-radius: 12px;
+  border: none !important;
+  border-left: 4px solid #6c757d !important;
+  transition:
+    transform 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+}
+
+.border-primary {
+  border-left-color: #0d6efd !important;
+}
+.border-success {
+  border-left-color: #198754 !important;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+.btn {
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+/* DARK MODE (Karanlık Mod) ÖZELLEŞTİRMELERİ */
+/* Eğer sistemde karanlık mod aktifse bu kodlar devreye girer */
+[data-bs-theme="dark"] body {
+  background-color: #121212 !important; /* Göz yormayan koyu arka plan */
+}
+
+[data-bs-theme="dark"] .kanban-col {
+  background: #1e1e1e !important; /* Kolonları biraz daha belirgin yap */
+  border-color: #333 !important;
+}
+
+[data-bs-theme="dark"] .card {
+  background-color: #2b2b2b !important; /* Kartları arka plandan ayır */
+}
